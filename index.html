@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tabs test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="tabs">
+		<div class="tabs__nav">
+			<button class="tabs__nav-btn" type="button" data-tab="#tab_1">Горный велосипед</button>
+			<button class="tabs__nav-btn" type="button" data-tab="#tab_2">Женский велосипед</button>
+		</div>
+		<div class="tabs__content">
+			
+				<div class="tabs__item onechild" id="tab_1">
+                    <button class="accordion ">Горный велосипед</button>
+			        <div class="panel ">
+					<div class="tabs_content">
+						<div class="tabs_item__img">
+							<img src="img/bike1.png" alt="Горный велосипед">
+						</div>
+						<div class="tabs_item__info">
+							<h1 class="tabs_item__title">
+                    Велосипед STELS Navigator 510 HD 26 2022
+                </h1>
+							<p class="tabs_item_subtitle">Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.</p>
+							<p class="tabs_item_subtitle">Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.</p>
+						</div>
+					</div>
+					<div class="characteristic">
+						<h2 class="characteristic_title">Характеристики</h2>
+						<ol id="list" class="characteristic_list">
+							<li class="characteristic_item">Двойной обод</li>
+							<li class="characteristic_item">Алюминиевый сплав</li>
+							<li class="characteristic_item">Колеса диаметром 26 дюймов</li>
+							<li class="characteristic_item">Покрышки 26х1,95"</li>
+						</ol>
+						<h3 class="characteristic_input_title">Добавить характеристику</h3>
+						<input type="text" id="txtVal" placeholder="Алюминиевый сплав">
+						<button class="btn blue" onclick="addLi()">Добавить</button>
+					</div>
+					<div class="island">
+						<button class="btn blue">Окей</button>
+						<button class="btn white">Отмена</button>
+					</div>
+				</div>
+			</div>
+            <div class="gils_mountain">
+				<div class="tabs__item" id="tab_2">
+                    <button class="accordion">Женский велосипед</button>
+			        <div class="panel">
+					<div class="tabs_content">
+                        
+						<div class="tabs_item__img">
+							<img src="img/bike2.png" alt="Женский велосипед">
+						</div>
+						<div class="tabs_item__info">
+							<h1 class="tabs_item__title">
+                        Велосипед SCHWINN Traveler women 2022
+                    </h1>
+							<p class="tabs_item_subtitle">Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.</p>
+							<p class="tabs_item_subtitle">На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.</p>
+						</div>
+					</div>
+					<div class="characteristic girls">
+						<h2 class="characteristic_title">Характеристики</h2>
+						<ol id="list2" class="characteristic_list">
+							<li class="characteristic_item">Стальная рама</li>
+							<li class="characteristic_item">Жесткая вилка</li>
+							<li class="characteristic_item">Колеса диаметром 24 дюймов</li>
+							<li class="characteristic_item">7 скоростей</li>
+						</ol>
+						<h3 class="characteristic_input_title">Добавить характеристику</h3>
+						<input type="text" id="txtValidator" placeholder="Алюминиевый сплав">
+						<button class="btn blue" onclick="addList()">Добавить</button>
+					</div>
+					<div class="island">
+						<button class="btn blue">Окей</button>
+						<button class="btn white">Отмена</button>
+					</div>
+				</div>
+            </div>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
