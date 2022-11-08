@@ -190,7 +190,7 @@ body {
 	color: var(--main);
 	border: 1px solid var(--grey);
 	border-radius: 16px;
-	padding: 16px 123px 16px 16px;
+	padding: 16px 126px 16px 16px;
 	margin-right: 24px;
 }
 .characteristic input::placeholder {
@@ -260,10 +260,10 @@ body {
 		color: var(--black);
 	}
 	.accordion {
+		width: 100%;
 		background-color: var(--white);
 		color: var(--main);
 		cursor: pointer;
-		width: 1252px;
         padding: 22px 116px 21px 20px;
 		text-align: left;
 		transition: 0.4s;
@@ -272,8 +272,9 @@ body {
 		font-size: 20px;
 		line-height: 100%;
 	}
-	.active,
-	.accordion:hover {
+	
+	.accordion.active {
+		color: var(--blue);
 		background-color: var(--white);
 	}
 	.panel {
@@ -295,7 +296,7 @@ body {
 		width: 10px;
 		height: 1px;
 		background-color: var(--main);
-		top: 0;
+		top: 50%;
 		transition: all 0.3ms ease-in;
 	}
 	.accordion::before {
@@ -340,6 +341,7 @@ body {
 	.island {
 		display: flex;
 		justify-content: center;
+		padding: 15px;
 	}
 	.tabs_item__title {
 
@@ -359,4 +361,7 @@ body {
     .onechild{
         margin-bottom: 20px;
     }
+	.characteristic input{
+		padding: 16px;
+	}
 }
